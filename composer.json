@@ -1,0 +1,29 @@
+{
+    "name": "stronger21012/autotranslator",
+    "description": "To connect an automatic translator to a project that will be executed on command",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Stronger21012\\Autotranslator\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "KirillNekrasov21012",
+            "email": "kirya.nekrasov.21012@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^12.0"
+    },
+    "extra": {
+        "laravel":{
+            "providers": [
+                "Stronger21012\\Autotranslator\\AutoTranslatorServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

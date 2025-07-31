@@ -11,6 +11,6 @@ return [
     'yandex' => [
         'api_key' => env('YANDEX_TRANSLATE_API_KEY'),
         'folder_id' => env('YANDEX_FOLDER_ID'),
-        'url' => env('YANDEX_API_URL', 'https://translate.api.cloud.yandex.net/translate/v1/translate'),
+        'url' => env('YANDEX_API_URL', 'https://translate.api.cloud.yandex.net/translate/v2/translate'),
     ],
 ];

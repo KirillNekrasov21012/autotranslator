@@ -6,6 +6,7 @@ use Illuminate\Support\ServiceProvider;
 use Illuminate\Contracts\Config\Repository as Config;
 use Stronger21012\Autotranslator\Services\TranslatorInterface;
 use Stronger21012\Autotranslator\Services\GoogleTranslationService;
+use Stronger21012\Autotranslator\Services\LibreTranslationService;
 use Stronger21012\Autotranslator\Services\YandexTranslationService;
 
 class AutoTranslatorServiceProvider extends ServiceProvider
@@ -16,11 +17,12 @@ class AutoTranslatorServiceProvider extends ServiceProvider
 
         $this->app->bind(TranslatorInterface::class, function ($app) {
             $config = $app->make(Config::class);
-            $driver = $config->get('autotranslator.driver', 'yandex');
+            $driver = $config->get('autotranslator.driver', 'libretranslate');
 
             return match ($driver) {
                 'google' => new GoogleTranslationService($config),
                 'yandex' => new YandexTranslationService($config),
+                'libretranslate' => new LibreTranslationService($config),
                 default => new YandexTranslationService($config),
             };
         });

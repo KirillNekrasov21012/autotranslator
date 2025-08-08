@@ -4,10 +4,10 @@ namespace Stronger21012\Autotranslator;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Contracts\Config\Repository as Config;
-use Stronger21012\Autotranslator\Services\TranslatorInterface;
-use Stronger21012\Autotranslator\Services\GoogleTranslationService;
-use Stronger21012\Autotranslator\Services\LibreTranslationService;
-use Stronger21012\Autotranslator\Services\YandexTranslationService;
+use Stronger21012\Autotranslator\Services\Translation\TranslatorInterface;
+use Stronger21012\Autotranslator\Services\Translation\GoogleTranslationService;
+use Stronger21012\Autotranslator\Services\Translation\LibreTranslationService;
+use Stronger21012\Autotranslator\Services\Translation\YandexTranslationService;
 
 class AutoTranslatorServiceProvider extends ServiceProvider
 {

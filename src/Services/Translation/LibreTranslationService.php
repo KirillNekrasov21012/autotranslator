@@ -1,6 +1,6 @@
 <?php
 
-namespace Stronger21012\Autotranslator\Services;
+namespace Stronger21012\Autotranslator\Services\Translation;
 
 use Illuminate\Contracts\Config\Repository as Config;
 use Illuminate\Support\Facades\Http;

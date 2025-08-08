@@ -1,6 +1,6 @@
 <?php
 
-namespace Stronger21012\Autotranslator\Services;
+namespace Stronger21012\Autotranslator\Services\Translation;
 
 interface TranslatorInterface
 {

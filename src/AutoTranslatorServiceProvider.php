@@ -2,10 +2,10 @@
 
 namespace Stronger21012\Autotranslator;
 
-use ApiKeyGeneration;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Contracts\Config\Repository as Config;
-use InstallLibreTranslate;
+use Stronger21012\Autotranslator\Console\ApiKeyGeneration;
+use Stronger21012\Autotranslator\Console\InstallLibreTranslate;
 use Stronger21012\Autotranslator\Services\Translation\TranslatorInterface;
 use Stronger21012\Autotranslator\Services\Translation\GoogleTranslationService;
 use Stronger21012\Autotranslator\Services\Translation\LibreTranslationService;

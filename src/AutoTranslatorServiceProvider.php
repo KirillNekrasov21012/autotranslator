@@ -2,8 +2,10 @@
 
 namespace Stronger21012\Autotranslator;
 
+use ApiKeyGeneration;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Contracts\Config\Repository as Config;
+use InstallLibreTranslate;
 use Stronger21012\Autotranslator\Services\Translation\TranslatorInterface;
 use Stronger21012\Autotranslator\Services\Translation\GoogleTranslationService;
 use Stronger21012\Autotranslator\Services\Translation\LibreTranslationService;
@@ -34,5 +36,9 @@ class AutoTranslatorServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/../config/autotranslator.php' => $this->app->configPath('autotranslator.php'),
         ], 'config');
+        $this->commands([
+            InstallLibreTranslate::class,
+            ApiKeyGeneration::class,
+        ]);
     }
 }

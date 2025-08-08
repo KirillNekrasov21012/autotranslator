@@ -1,5 +1,7 @@
 <?php
 
+namespace Stronger21012\Autotranslator\Console;
+
 use Illuminate\Console\Command;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Filesystem\Filesystem;

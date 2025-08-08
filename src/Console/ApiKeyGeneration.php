@@ -1,5 +1,7 @@
 <?php
 
+namespace Stronger21012\Autotranslator\Console;
+
 use Illuminate\Console\Command;
 use Stronger21012\Autotranslator\Services\Generation\ApiKeyGenerationService;
 

@@ -2,7 +2,7 @@
 
 namespace Stronger21012\Autotranslator\Helper;
 
-use Stronger21012\Autotranslator\Services\TranslatorInterface;
+use Stronger21012\Autotranslator\Services\Translation\TranslatorInterface;
 
 class AutoTranslate
 {

@@ -28,7 +28,7 @@ class InstallLibreTranslate extends Command
         $filesystem = new Filesystem();
 
         $target = $this->app->basePath('docker-compose.libretranslate.yml');
-        $stub = __DIR__ . '/../../resources/stubs/docker-compose.libretranslate.stub.yml';
+        $stub = __DIR__ . '/../../resources/stubs/docker/docker-compose.libretranslate.stub.yml';
 
         $apiKey = $this->apiKeyGeneration->generate();
         if (! $filesystem->exists($target)) {

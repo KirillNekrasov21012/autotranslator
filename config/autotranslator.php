@@ -15,7 +15,7 @@ return [
     ],
 
     'libretranslate' => [
-        'url' => env('LIBRETRANSLATE_URL', 'http://libretranslate:5000'),
-        'api_key' => env('LIBRETRANSLATE_API_KEY'),
+        'url' => env('LIBRETRANSLATE_URL', 'http://host.docker.internal:5000'),
+        'api_key' => env('LIBRETRANSLATE_API_KEY', ''),
     ],
 ];
